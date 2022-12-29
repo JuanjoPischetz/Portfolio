@@ -45,11 +45,9 @@ const ModalPawsFounding = ({isOpen2, closeModal2}) => {
                     <div className='flex flex-row justify-around'>
                     <a href='https://github.com/JuanjoPischetz/PF-Henry-Grupo05'  target={"_blank"} rel="noreferrer">
                       <AiFillGithub className='w-[50px] h-[50px]'/>
-                      <p className='font-medium'>Github</p>
                     </a>
                     <a href='https://pf-henry-grupo05.vercel.app/' target={"_blank"} rel="noreferrer">
                       <CgWebsite className='w-[50px] h-[50px]'/>
-                      <p className='font-medium'>Site</p>
                     </a>
                     </div>
                     </div>

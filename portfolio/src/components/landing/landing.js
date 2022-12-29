@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const Landing = () => {
 
   return (
-    <div  className='w-full h-screen flex flex-col-reverse justify-around p-2'>
+    <div  className='w-full h-screen flex flex-col-reverse justify-around content-center p-2'>
         <div className='w-full h-[300px] text-center'>
             <div>
             <Fade cascade damping={0.5} duration={2000} delay={500} triggerOnce>

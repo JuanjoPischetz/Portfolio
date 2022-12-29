@@ -49,17 +49,17 @@ const inputHandler = function(e){
     <div className='w-full rounded-lg shadow-xl shadow-[#2D2525] bg-[#AFFFCE] flex justify-center'>
     <form ref={form} onSubmit={sendEmail} className='m-2 p-2'>
     <div className='flex flex-col w-[300px]'>
-      <label>Name</label>
-      <input type="text" name="user_name" placeholder='What is your name?'
+      <label className='text-[#7A1E33] font-bold text-lg'>Name</label>
+      <input className='mb-2' type="text" name="user_name" placeholder='What is your name?'
       value={input.user_name} onChange={inputHandler}/>
       <p>{errors.name}</p>
-      <label>Email</label>
-      <input type="email" name="user_email" placeholder='Your Email'
+      <label className='text-[#7A1E33] font-bold text-lg'>Email</label>
+      <input className='mb-2' type="email" name="user_email" placeholder='Your Email'
       value={input.user_email} onChange={inputHandler}/>
       <p>{errors.email}</p>
-      <label>Message</label>
-      <textarea name="message" placeholder='How can I help you?'
-      value={input.message} onChange={inputHandler}/>
+      <label className='text-[#7A1E33] font-bold text-lg'>Message</label>
+      <textarea className='mb-2' name="message" placeholder='How can I help you?' cols={1} rows={3}
+      value={input.message} onChange={inputHandler} />
       <p>{errors.message}</p>
       <button type='submit' disabled={!(input.user_name !== '' && !errors.user_email && !errors.message)}
       className={(input.user_name !== '' && !errors.user_email && !errors.message)?"bg-red border-4 p-4":" bg-blue border-2 p-4"}
