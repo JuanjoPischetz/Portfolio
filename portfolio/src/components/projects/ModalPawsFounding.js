@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react'
 import { Transition, Dialog } from '@headlessui/react'
-import { AiOutlineCloseCircle} from "react-icons/ai";
+import { AiOutlineCloseCircle, AiFillGithub} from "react-icons/ai";
+import {CgWebsite} from 'react-icons/cg'
 
 
 const ModalPawsFounding = ({isOpen2, closeModal2}) => {
@@ -16,7 +17,7 @@ const ModalPawsFounding = ({isOpen2, closeModal2}) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <div className="fixed inset-0 bg-black bg-opacity-25" />
+              <div className="fixed inset-0 bg-black bg-opacity-50" />
             </Transition.Child>
     
             <div className="fixed inset-0 overflow-y-auto">
@@ -30,14 +31,27 @@ const ModalPawsFounding = ({isOpen2, closeModal2}) => {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className=" transform overflow-hidden bg-transparent  align-middle  transition-all">
+                  <Dialog.Panel className=" transform overflow-hidden bg-white shadow-xl shadow-[#AFFFCE]  align-middle  transition-all">
                     {/* aca se renderizan cosas */}
-                    <div className='bg-white w-[300px] h-[600px] p-2 flex flex-col'>
+                    <div className='bg-[#AFFFCE] bg-opacity-[0.2] w-[300px] h-min-[600px] overflow-y p-4 flex flex-col'>
                     <div className='w-full h-fit flex flex-row justify-end'>
                     <AiOutlineCloseCircle className='w-[30px] h-[30px]'
                     onClick={()=>closeModal2(true)}/>
                     </div>
-                    <h1>Modal PawsFounding</h1>
+                    <h1 className='mt-2 text-[#7A1E33] font-bold text-2xl'>MVP PawsFounding</h1>
+                    <p className='mb-4 text-[#2D2525] text-sm'>(11/07/22 to 11/30/22)</p>
+                    <span className='text-left indent-2 mb-2 text-[#2D2525] font-medium text-base'>PawsFounding is a funding platform with social network integration. It is a tool that allows animal shelters to publicize their activities and at the same time receive donations in a transparent way. </span>
+                    <span className='text-left indent-2 mb-4 text-[#2D2525] font-medium text-base'>Seven people worked on this project that includes login and authentication, payment gateway, image and video post, administrator panel, geolocation and more. In addition, the project was carried out in three weeks from scratch, using agile methodologies (scrum) divided into three sprints.</span>
+                    <div className='flex flex-row justify-around'>
+                    <a href='https://github.com/JuanjoPischetz/PF-Henry-Grupo05'  target={"_blank"} rel="noreferrer">
+                      <AiFillGithub className='w-[50px] h-[50px]'/>
+                      <p className='font-medium'>Github</p>
+                    </a>
+                    <a href='https://pf-henry-grupo05.vercel.app/' target={"_blank"} rel="noreferrer">
+                      <CgWebsite className='w-[50px] h-[50px]'/>
+                      <p className='font-medium'>Site</p>
+                    </a>
+                    </div>
                     </div>
                   </Dialog.Panel>
                 </Transition.Child>

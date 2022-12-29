@@ -6,16 +6,16 @@ import Projects from "./components/projects/Projects";
 function App() {
   return (
     <div className=" snap-mandatory snap-y scroll-smooth w-full h-screen overflow-x-hidden">
-        <div className="snap-start ">
+        <div className="snap-start bg-[#AFFFCE] bg-opacity-[0.2]">
         <Landing/>
         </div>
-        <div className="snap-start ">
+        <div className="snap-start bg-[#AFFFCE] bg-opacity-[0.2]">
         <About/>
         </div>
-        <div className="snap-start ">
+        <div className="snap-start bg-[#AFFFCE] bg-opacity-[0.2]">
         <Projects/>
         </div>
-        <div className="snap-start ">
+        <div className="snap-start bg-[#AFFFCE] bg-opacity-[0.2]">
         <Contact/>
         </div>
     </div>
