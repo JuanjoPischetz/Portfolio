@@ -31,23 +31,23 @@ const ModalVideoGames = ({isOpen, closeModal}) => {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className=" transform overflow-hidden bg-white shadow-xl shadow-[#AFFFCE] align-middle  transition-all">
+                  <Dialog.Panel className=" transform overflow-hidden bg-white shadow-xl shadow-[#AFFFCE] align-middle  transition-all rounded-lg sm:rounded-xl">
                     {/* aca se renderizan cosas */}
-                    <div className='bg-[#AFFFCE] bg-opacity-[0.2] w-[300px] h-[600px] p-4 flex flex-col'>
+                    <div className='bg-[#AFFFCE] bg-opacity-[0.2] w-[300px] sm:w-[500px] h-[600px] sm:h-[800px] lg:w-[900px] lg:h-[500px] p-4 flex flex-col'>
                     <div className='w-full h-fit flex flex-row justify-end'>
                     <AiOutlineCloseCircle className='w-[30px] h-[30px]'
                     onClick={()=>closeModal(true)}/>
                     </div>
-                    <h1 className='mt-4 text-[#7A1E33] font-bold text-2xl'>SPA Video Games</h1>
-                    <p className='mb-4 text-[#2D2525] text-sm'>(10/10/22 to 10/25/22)</p>
-                    <span className='text-left indent-2 mb-4 text-[#2D2525] font-medium text-lg'>That was my first project ever. After two months of BootCamp, we have to face the Individual Project stage. </span>
-                    <span className='text-left indent-2 mb-8 text-[#2D2525] font-medium text-lg '>This SPA includes external API management and its own database, which can read the information from the client, filter, sort, and create a new game.</span>
+                    <h1 className='mt-4 text-[#7A1E33] font-bold text-2xl sm:text-3xl'>SPA Video Games</h1>
+                    <p className='mb-4 sm:mb-12 text-[#2D2525] text-sm sm:text-xl '>(10/10/22 to 10/25/22)</p>
+                    <span className='text-left indent-2 mb-4 sm:mb-8 text-[#2D2525] font-medium text-lg sm:text-2xl'>That was my first project ever. After two months of BootCamp, we have to face the Individual Project stage. </span>
+                    <span className='text-left indent-2 mb-8 sm:mb-24 lg:mb-8 text-[#2D2525] font-medium text-lg sm:text-2xl'>This SPA includes external API management and its own database, which can read the information from the client, filter, sort, and create a new game.</span>
                     <div className='flex flex-row justify-around'>
                     <a href='https://github.com/JuanjoPischetz/PI-VideoGames'  target={"_blank"} rel="noreferrer">
-                      <AiFillGithub className='w-[50px] h-[50px]'/>
+                      <AiFillGithub className='w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] '/>
                     </a>
                     <a href='https://pi-video-games-juanjopischetz.vercel.app/' target={"_blank"} rel="noreferrer">
-                      <CgWebsite className='w-[50px] h-[50px]'/>
+                      <CgWebsite className='w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] '/>
                     </a>
                     </div>
                     </div>

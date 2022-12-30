@@ -31,23 +31,23 @@ const ModalPawsFounding = ({isOpen2, closeModal2}) => {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className=" transform overflow-hidden bg-white shadow-xl shadow-[#AFFFCE]  align-middle  transition-all">
+                  <Dialog.Panel className=" transform overflow-hidden bg-white shadow-xl shadow-[#AFFFCE]  align-middle  transition-all rounded-lg sm:rounded-xl">
                     {/* aca se renderizan cosas */}
-                    <div className='bg-[#AFFFCE] bg-opacity-[0.2] w-[300px] h-min-[600px] overflow-y p-4 flex flex-col'>
+                    <div className='bg-[#AFFFCE] bg-opacity-[0.2] w-[300px] h-min-[600px]  sm:w-[500px] sm:h-[800px] lg:w-[900px] lg:h-[550px] overflow-y p-4 flex flex-col'>
                     <div className='w-full h-fit flex flex-row justify-end'>
                     <AiOutlineCloseCircle className='w-[30px] h-[30px]'
                     onClick={()=>closeModal2(true)}/>
                     </div>
-                    <h1 className='mt-2 text-[#7A1E33] font-bold text-2xl'>MVP PawsFounding</h1>
-                    <p className='mb-4 text-[#2D2525] text-sm'>(11/07/22 to 11/30/22)</p>
-                    <span className='text-left indent-2 mb-2 text-[#2D2525] font-medium text-base'>PawsFounding is a funding platform with social network integration. It is a tool that allows animal shelters to publicize their activities and at the same time receive donations in a transparent way. </span>
-                    <span className='text-left indent-2 mb-4 text-[#2D2525] font-medium text-base'>Seven people worked on this project that includes login and authentication, payment gateway, image and video post, administrator panel, geolocation and more. In addition, the project was carried out in three weeks from scratch, using agile methodologies (scrum) divided into three sprints.</span>
+                    <h1 className='mt-2 text-[#7A1E33] font-bold text-2xl sm:text-3xl'>MVP PawsFounding</h1>
+                    <p className='mb-4 text-[#2D2525] text-sm sm:text-xl sm:mb-8'>(11/07/22 to 11/30/22)</p>
+                    <span className='text-left indent-2 mb-2 sm:mb-4 text-[#2D2525] font-medium text-base sm:text-2xl'>PawsFounding is a funding platform with social network integration. It is a tool that allows animal shelters to publicize their activities and at the same time receive donations in a transparent way. </span>
+                    <span className='text-left indent-2 mb-4 sm:mb-8 text-[#2D2525] font-medium text-base sm:text-2xl'>Seven people worked on this project that includes login and authentication, payment gateway, image and video post, administrator panel, geolocation and more. In addition, the project was carried out in three weeks from scratch, using agile methodologies (scrum) divided into three sprints.</span>
                     <div className='flex flex-row justify-around'>
                     <a href='https://github.com/JuanjoPischetz/PF-Henry-Grupo05'  target={"_blank"} rel="noreferrer">
-                      <AiFillGithub className='w-[50px] h-[50px]'/>
+                      <AiFillGithub className='w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] '/>
                     </a>
                     <a href='https://pf-henry-grupo05.vercel.app/' target={"_blank"} rel="noreferrer">
-                      <CgWebsite className='w-[50px] h-[50px]'/>
+                      <CgWebsite className='w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] '/>
                     </a>
                     </div>
                     </div>

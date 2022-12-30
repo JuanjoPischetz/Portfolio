@@ -13,7 +13,7 @@ import {MdOutlineOpenInNew} from "react-icons/md";
 import Slider from '../slider/Slider'
 
 
-const Projects = () => {
+const ProjectsLg = () => {
 
 const [isOpen, setIsOpen] = useState(false)
 const [isOpen2, setIsOpen2] = useState(false)
@@ -24,33 +24,32 @@ const closeModal2 = ()=> setIsOpen2(false)
   return (
     <div  className='w-full h-screen p-4 sm:px-8'>
         <Fade duration={2000} triggerOnce>
-        <h1 className='text-3xl sm:text-4xl md:text-6xl text-[#7A1E33] font-bold'>
+        <h1 className='text-5xl text-[#7A1E33] font-bold'>
             Projects
         </h1>
         </Fade>
-        <Slide triggerOnce><div className='border-2 md:border-4 bg-[#AFFFCE] border-[#AFFFCE] w-full mb-8 sm:mt-2 md:mt-4'></div></Slide>
-        <div className='flex flex-col content-center justify-around h-5/6 '>
+        <Slide triggerOnce><div className='border-2 bg-[#AFFFCE] border-[#AFFFCE] w-full mb-8 mt-2'></div></Slide>
+        <div className='flex flex-row content-center justify-around items-center h-5/6'>
         <Fade direction='left' delay={1500} duration={500} triggerOnce>
             <div>
-            <div className='w-full flex flex-row content-center items-center mb-2'>
-            <p className='mr-2 text-[#7A1E33] font-bold text-xl  sm:text-2xl md:text-4xl'>SPA Video Games</p>
+            <div className='w-full flex flex-row content-center items-center '>
+            <p className='mr-2 text-[#7A1E33] font-bold  text-3xl xl:text-4xl'>SPA Video Games</p>
             <MdOutlineOpenInNew onClick={()=>setIsOpen(true)}
             className='w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px]'/>
             </div>
-            <div className='w-[300px] h-[200px] sm:w-[500px] sm:h-[350px] md:w-[650px] md:h-[450px] py-4 px-2 sm:py-12 sm:px-4 mx-auto'>
+            <div className='w-[500px] h-[380px] xl:w-[650px] xl:h-[475px] py-16 px-4'>
             <Slider slides={[piLanding,piHome,piDetails]}/>
             </div>
             </div>
         </Fade>
         <Fade direction='right' delay={2000} duration={500} triggerOnce>
             <div>
-            <div className='w-full flex flex-row content-center items-center mb-2'>
-                <p className='mr-2 text-[#7A1E33] font-bold text-xl text-center sm:text-2xl md:text-4xl'>MVP PawsFounding</p>
+            <div className='w-full flex flex-row content-center items-center '>
+                <p className='mr-2 text-[#7A1E33] font-bold text-3xl xl:text-4xl'>MVP PawsFounding</p>
                 <MdOutlineOpenInNew onClick={()=>setIsOpen2(true)}
                 className='w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px]'/>
             </div>
-        
-            <div className='w-[300px] h-[200px] sm:w-[500px] sm:h-[350px] md:w-[650px] md:h-[450px] py-4 px-2 sm:py-12 sm:px-4 mx-auto'>
+            <div className='w-[500px] h-[380px] xl:w-[650px] xl:h-[475px] py-16 px-4'>
             <Slider slides={[pfLanding,pfAbout,pfProfile]}/>
             </div>
         </div>
@@ -63,4 +62,4 @@ const closeModal2 = ()=> setIsOpen2(false)
   )
 }
 
-export default Projects
+export default ProjectsLg
