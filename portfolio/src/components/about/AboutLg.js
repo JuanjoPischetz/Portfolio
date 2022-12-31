@@ -38,7 +38,7 @@ const AboutLg = () => {
         <p className='text-[#7A1E33] font-bold  mb-2 text-3xl 2xl:text-5xl 2xl:mb-8 dark:text-[#FFBB00]'>Certifications</p>
         <Fade duration={1} triggerOnce>
         <div className='w-full flex-row'>
-        <div className='w-[350px] h-[250px] xl:w-[500px] xl:h-[375px] 2xl:w-[750px] 2xl:h-[500px] py-4 px-2 mx-auto mb-8'>
+        <div className='w-[350px] h-[250px] xl:w-[400px] xl:h-[300px] 2xl:w-[750px] 2xl:h-[500px] py-4 px-2 mx-auto mb-8'>
           <Slider slides={[certOne,certTwo,certTa,certEf]}/>
         </div>
         </div>
