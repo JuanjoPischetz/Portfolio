@@ -35,7 +35,7 @@ const ModalVideoGames = ({isOpen, closeModal}) => {
                     {/* aca se renderizan cosas */}
                     <div className='bg-[#EDFFDA] bg-opacity-[0.5] dark:bg-[#000000] dark:bg-opacity-[0.85] w-[300px] sm:w-[500px] h-[600px] sm:h-[800px] lg:w-[900px] lg:h-[500px] p-4 flex flex-col lg:px-8'>
                     <div className='w-full h-fit flex flex-row justify-end'>
-                    <AiOutlineCloseCircle className='w-[30px] h-[30px] dark:invert'
+                    <AiOutlineCloseCircle className='w-[30px] h-[30px] dark:invert cursor-pointer'
                     onClick={()=>closeModal(true)}/>
                     </div>
                     <h1 className='mt-4 text-[#7A1E33] font-bold text-2xl sm:text-3xl dark:text-[#FFBB00]'>SPA Video Games</h1>

@@ -35,7 +35,7 @@ const ModalPawsFounding = ({isOpen2, closeModal2}) => {
                     {/* aca se renderizan cosas */}
                     <div className='bg-[#EDFFDA] bg-opacity-[0.5] dark:bg-[#000000] dark:bg-opacity-[0.85] w-[300px] h-min-[600px]  sm:w-[500px] sm:h-[800px] lg:w-[900px] lg:h-[550px] overflow-y p-4 lg:px-8 flex flex-col'>
                     <div className='w-full h-fit flex flex-row justify-end'>
-                    <AiOutlineCloseCircle className='w-[30px] h-[30px] dark:invert'
+                    <AiOutlineCloseCircle className='w-[30px] h-[30px] dark:invert cursor-pointer'
                     onClick={()=>closeModal2(true)}/>
                     </div>
                     <h1 className='mt-2 text-[#7A1E33] font-bold text-2xl sm:text-3xl dark:text-[#FFBB00]'>MVP PawsFounding</h1>
