@@ -9,8 +9,8 @@ import certEf from './cert_ef.png'
 
 const AboutLg = () => {
   return (
-    <div  className=' w-full p-4 sm:px-8 2xl:px-12'>
-        <div className='w-full flex flex-col content-center justify-around h-screen'>
+    <div  className=' w-full p-4 sm:px-8 2xl:px-12 h-screen'>
+        <div className='w-full flex flex-col content-center justify-around h-full'>
         <div className='w-full flex flex-col h-min'>
           <div className='flex flex-row items-center'>
         <h2 className='text-4xl xl:text-5xl 2xl:text-7xl 2xl:mb-4 2xl:mr-8 mb-2  mr-4 text-[#7A1E33] font-bold dark:text-[#FFBB00]'>
@@ -35,10 +35,10 @@ const AboutLg = () => {
         </span>
         </div>
         <div>
-        <p className='text-[#7A1E33] font-bold  mb-2 text-3xl 2xl:text-5xl 2xl:mb-8 dark:text-[#FFBB00]'>Certifications</p>
+        <p className='text-[#7A1E33] font-bold  mb-2 text-3xl 2xl:text-5xl 2xl:mb-16 dark:text-[#FFBB00]'>Certifications</p>
         <Fade duration={1} triggerOnce>
         <div className='w-full flex-row'>
-        <div className='w-[350px] h-[250px] xl:w-[400px] xl:h-[300px] 2xl:w-[750px] 2xl:h-[500px] py-4 px-2 mx-auto mb-8'>
+        <div className='w-[350px] h-[250px] xl:w-[400px] xl:h-[300px] 2xl:w-[650px] 2xl:h-[400px] py-4 px-2 mx-auto mb-8'>
           <Slider slides={[certOne,certTwo,certTa,certEf]}/>
         </div>
         </div>
