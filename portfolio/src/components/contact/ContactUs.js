@@ -10,17 +10,20 @@ const [input, setInput] = useState({
     user_email:'',
     message:''
 })
+
 const [errors, setErrors] = useState({
 })
 const validaciones = function(input){
+    const regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i;
+    const regexName = /[a-zA-Z]+ [a-zA-Z]+/i;
     let errors ={}
-    if(!input.user_name){
-        errors.name='Complete this field';
+    if(!regexName.test(input.user_name)){
+        errors.name='Complete this field (no special characters)';
     }
     if (!input.message){
         errors.message='Message cant be empty';
     }
-    if(!input.user_email.includes('@') || !input.user_email.includes('.')){
+    if(!regex.test(input.user_email)){
         errors.email ='Please write and valid email direction'
     }
     return errors;
@@ -75,7 +78,7 @@ const inputHandler = function(e){
     <form ref={form} onSubmit={sendEmail} className='m-2 p-2 '>
     <div className='flex flex-col w-[300px] sm:w-[450px] md:w-[600px]'>
       <label className='text-[#7A1E33] font-bold text-lg sm:text-2xl sm:mb-2 md:text-3xl 2xl:text-4xl 2xl:mb-4 dark:text-[#FFBB00]'>Name</label>
-      <input className='mb-2 indent-2 text-2xl md:text-3xl 2xl:text-4xl 2xl:mb-4 bg-[#7A1E33] bg-opacity-[0.1] dark:bg-[#000000] dark:bg-opacity-[0.15] dark:text-white rounded-lg' type="text" name="user_name" placeholder='What is your name?'
+      <input className='mb-2 indent-2 text-2xl md:text-3xl 2xl:text-4xl 2xl:mb-4 bg-[#7A1E33] bg-opacity-[0.1] dark:bg-[#000000] dark:bg-opacity-[0.15] dark:text-white rounded-lg' type="text" name="user_name" placeholder='What is your fullname?'
       value={input.user_name} onChange={inputHandler}/>
       <p className='text-red-900 sm:text-lg lg:text-xl dark:text-[#C5C5C5]'>{errors.name}</p>
       <label className='text-[#7A1E33] font-bold text-lg sm:text-2xl sm:mb-2 md:text-3xl 2xl:text-4xl 2xl:mb-4 dark:text-[#FFBB00]'>Email</label>
