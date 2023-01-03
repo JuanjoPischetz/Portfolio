@@ -3,21 +3,29 @@ import { useState, useEffect } from "react";
 
 function DarkModeButton() {
   const [theme, setTheme] = useState(null);
+  const item = window.localStorage.getItem('theme');
 
-  useEffect(() => {
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-      setTheme('dark');
-    }
-    else {
-      setTheme('light');
-    }
-  }, [])
+  useEffect(() => { 
+      if(item){
+        setTheme(item)
+      }
+      else{
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+          setTheme('dark');
+        }
+        else {
+          setTheme('light');
+        }
+      }
+  },[])
 
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
+      localStorage.setItem('theme','dark');
     } else {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem('theme','light');
     }
   }, [theme]);
 
