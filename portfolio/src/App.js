@@ -7,6 +7,7 @@ import AboutLg from "./components/about/AboutLg";
 import ProjectsLg from "./components/projects/ProjectsLg";
 import ContactLg from "./components/contact/ContactLg";
 import DarkModeButton from "./components/darkmode/DarkModeButton";
+import WhatsAppButton from "./components/wassap/WhatsAppButton";
 
 function App() {
   return (
@@ -15,11 +16,17 @@ function App() {
         <div className="fixed top-2 right-4 z-10">
           <DarkModeButton />
         </div>
+        <div className="fixed bottom-2 right-4 z-10">
+          <WhatsAppButton/>
+        </div>
         <Landing/>
         </div>
         <div className="snap-always snap-start hidden lg:flex">
         <div className="fixed top-4 right-8 z-10">
           <DarkModeButton />
+        </div>
+        <div className="fixed bottom-4 right-8 z-10">
+          <WhatsAppButton/>
         </div>
           <LandingLg/>
         </div>
